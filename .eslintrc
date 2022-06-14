@@ -1,0 +1,31 @@
+{
+  "parser": "@typescript-eslint/parser",
+  "parserOptions": {
+    "ecmaVersion": 2020,
+    "sourceType": "module",
+    "ecmaFeatures": {}
+  },
+  "settings": {
+    "import/resolver": {
+      "node": {
+        "extensions": [".js", ".ts", ".json"]
+      }
+    }
+  },
+  "extends": [
+    "eslint:recommended",
+    "plugin:@typescript-eslint/recommended",
+    "prettier/@typescript-eslint",
+    "plugin:prettier/recommended"
+  ],
+  "plugins": ["prettier"],
+  "rules": {
+    "semi": 1,
+    "max-len": [2, 120, 2],
+    "no-console": "warn",
+    "comma-dangle": ["error", "never"],
+    "prettier/prettier": ["error"],
+    "prefer-promise-reject-errors": "off",
+    "camelcase": "off"
+  }
+}
